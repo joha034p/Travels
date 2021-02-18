@@ -1,0 +1,26 @@
+img {
+    max-width: 50vh;
+}
+
+video {
+    max-width: 100vh;
+
+}
+
+
+
+
+@media only screen and (min-width: 600px) {
+
+    #section_1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    #section_1 img {
+        height: 30vw;
+        width: 45vw;
+        padding-left: 30px;
+    }
+}
