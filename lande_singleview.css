@@ -1,26 +1,135 @@
+body {
+    margin: 0;
+    background-color: #E5E0D9;
+    margin-bottom: -35vw;
+}
+
 img {
-    max-width: 50vh;
+    max-width: 100%;
+    height: auto;
 }
 
-video {
-    max-width: 100vh;
-
+header {
+    margin-bottom: -10vw;
 }
 
 
 
-
+/*Desktop*/
 @media only screen and (min-width: 600px) {
+
+    #video {
+        position: relative;
+        top: -1vw;
+        z-index: -1;
+        min-width: 100%;
+        width: auto;
+        height: 35vw;
+        object-fit: cover;
+    }
+
+
+    h2 {
+        text-align: center;
+        position: relative;
+        font-family: 'Kumar One Outline',
+            cursive;
+        font-size: 2rem;
+    }
+
+    h1 {
+        text-align: center;
+        position: relative;
+        top: -29vw;
+        font-family: 'Kumar One Outline', cursive;
+        font-size: 4rem;
+    }
+
+
+    h4 {
+        text-align: center;
+        position: relative;
+        top: -30vw;
+        font-family: 'Arvo',
+            serif;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
 
     #section_1 {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
+        margin: 10vw;
+        grid-gap: 3vw;
+        position: relative;
+        top: -10vw;
     }
 
-    #section_1 img {
-        height: 30vw;
-        width: 45vw;
-        padding-left: 30px;
+    #section_2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 10vw;
+        grid-gap: 3vw;
+        position: relative;
+        top: -10vw;
     }
+
+    #section_3 {
+
+        margin: 10vw;
+        position: relative;
+        top: -10vw;
+    }
+
+}
+
+/*mobile version*/
+
+@media only screen and (max-width: 600px) {
+    #video {
+        position: relative;
+        top: -1vw;
+        z-index: -1;
+        min-width: auto;
+        width: auto;
+        height: 60vw;
+        object-fit: cover;
+    }
+
+
+    h1 {
+        text-align: center;
+        position: relative;
+        top: -55vw;
+        font-family: 'Kumar One Outline', cursive;
+        font-size: 4rem;
+    }
+
+    h2 {
+        text-align: center;
+        position: relative;
+        font-family: 'Kumar One Outline', cursive;
+        font-size: 2rem;
+    }
+
+    h4 {
+        text-align: center;
+        position: relative;
+        top: -65vw;
+        font-family: 'Arvo', serif;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
+    main {
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: -10vw;
+        position: relative;
+        top: -10vw;
+    }
+
+
+
 }
