@@ -11,7 +11,7 @@ img {
 }
 
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 800px) {
 
     header {
         margin-bottom: -16vw;
@@ -170,7 +170,7 @@ img {
     }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
 
     .menu {
         display: none;
