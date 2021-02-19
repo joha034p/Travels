@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    background-color: #E5E0D9;
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    font-family: 'Kumar One Outline', cursive;
+    font-size: 3rem;
+}
+h2 {
+    font-family: 'Kumar One Outline', cursive;
+    font-size: 2rem;
+}
+#info {
+    width: 450px;
+    height: 400px;
+    text-align: center;
+    margin: 50px;
+}
+form {
+    width: 450px;
+    height: 600px;
+    background-color: #524135;
+    color: antiquewhite;
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    margin: 50px;
+    /*font*/
+}
+label,
+input,
+textarea,
+select,
+button {
+    display: block;
+    margin: 10px;
+    /*Font in button goes here*/
+}
+label {
+    font-family: ;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+input {
+    width: 250px;
+    height: 20px;
+    padding: 10px;
+}
+textarea {
+    width: 250px;
+    height: 100px;
+    padding: 10px;
+}
+button {
+    background-color: #E5E0D9;
+    color: #524135;
+    cursor: pointer;
+    width: 80px;
+    height: 40px;
+    border-radius: 15px;
+    place-self: center;
+}
+button:hover {
+    color: #ffffff;
+}
+@media screen and (min-width:768px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/**/
