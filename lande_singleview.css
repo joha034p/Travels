@@ -15,6 +15,7 @@ header {
 
 
 
+
 /*Desktop*/
 @media only screen and (min-width: 600px) {
 
@@ -27,6 +28,8 @@ header {
         height: 35vw;
         object-fit: cover;
     }
+
+
 
 
     h2 {
@@ -96,6 +99,8 @@ header {
         height: 60vw;
         object-fit: cover;
     }
+
+
 
 
     h1 {
