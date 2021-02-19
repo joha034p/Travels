@@ -18,6 +18,10 @@ h2 {
     text-align: center;
     margin: 50px;
 }
+img {
+    width: 20vw;
+    margin: 20px;
+}
 form {
     width: 450px;
     height: 600px;
