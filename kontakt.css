@@ -1,14 +1,32 @@
 body {
     margin: 0;
     background-color: #E5E0D9;
-    margin-bottom: -35vw;
+    display: flex;
+    justify-content: center;
 }
-.form_holder {
-    width: 30vw;
-    height: 25vw;
+h1 {
+    font-family: 'Kumar One Outline', cursive;
+    font-size: 3rem;
+}
+h2 {
+    font-family: 'Kumar One Outline', cursive;
+    font-size: 2rem;
+}
+#info {
+    width: 450px;
+    height: 400px;
+    text-align: center;
+    margin: 50px;
+}
+form {
+    width: 450px;
+    height: 600px;
     background-color: #524135;
     color: antiquewhite;
-    padding: 2vw;
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    margin: 50px;
     /*font*/
 }
 label,
@@ -17,7 +35,7 @@ textarea,
 select,
 button {
     display: block;
-    margin: 1vw;
+    margin: 10px;
     /*Font in button goes here*/
 }
 label {
@@ -26,13 +44,32 @@ label {
     font-weight: 300;
 }
 input {
-    border: none;
-    width: 17vw;
-    height: 2vw;
-    padding-left: 10px;
+    width: 250px;
+    height: 20px;
+    padding: 10px;
 }
 textarea {
-    border: 0;
+    width: 250px;
+    height: 100px;
     padding: 10px;
-    width: 17vw;
 }
+button {
+    background-color: #E5E0D9;
+    color: #524135;
+    cursor: pointer;
+    width: 80px;
+    height: 40px;
+    border-radius: 15px;
+    place-self: center;
+}
+button:hover {
+    color: #ffffff;
+}
+@media screen and (min-width:768px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/**/
