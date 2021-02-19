@@ -17,14 +17,15 @@
             position: relative;
             top: -30vw;
             padding-top: 0px;
-            width: 10%;
+            width: 20%;
             text-align: center;
-            margin: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
         }
 
         video {
-            position: relative;
-            top: -1vw;
             z-index: -1;
             min-width: 100%;
             width: auto;
@@ -66,6 +67,7 @@
             display: grid;
             margin: 100px;
             padding: 10px;
+            padding-top: 80px;
         }
 
         h2,
@@ -79,7 +81,11 @@
             margin: auto;
             text-align: center;
             gap: 10px;
-            padding: 50px;
+        }
+
+        #filterMenu {
+            padding-bottom: 80px;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
         }
 
         button {
@@ -90,6 +96,7 @@
             cursor: pointer;
             font-size: 16px;
             transition: .3s;
+            display: grid;
         }
 
         button:hover {
@@ -104,9 +111,62 @@
             opacity: 100%;
         }
 
+        .quote h4 {
+            font-family: 'Kumar One Outline', cursive;
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        footer {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: 0.5fr;
+            text-align: center;
+            padding-top: 10vw;
+
+        }
+
+        footer .quote {
+            grid-column: span 4;
+        }
+
+        footer .footer_txt {
+            grid-column: span 2;
+            grid-row: 2;
+        }
+
+        footer .footer_facebook {
+            grid-column: span 1;
+            grid-row: 2;
+        }
+
+        footer .footer_facebook img {
+            width: 20%;
+            height: auto;
+        }
 
 
-        @media only screen and (min-width: 800px) {
+        footer .footer_instagram {
+            grid-column: span 1;
+            grid-row: 2;
+        }
+
+        footer .footer_instagram img {
+            width: 20%;
+            height: auto;
+        }
+
+        footer img {
+            width: 10%;
+        }
+
+        footer p {
+            font-family: 'Arvo', serif;
+        }
+
+
+
+        @media only screen and (min-width: 700px) {
             main {
                 grid-template-columns: 1fr 1fr;
             }
@@ -119,5 +179,138 @@
             img {
                 width: 100%;
                 height: 100%;
+            }
+
+            header {
+                margin-bottom: -16vw;
+            }
+
+            header menu {
+                position: relative;
+                height: 0;
+                box-sizing: border-box;
+                text-align: center;
+            }
+
+            nav .menu {
+                display: inline-block;
+                background-color: rgba(255, 255, 255, 0.44);
+                width: 100vw;
+
+            }
+
+            nav a {
+                font-family: 'Arvo', serif;
+                color: black;
+                font-weight: 600;
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                text-align: center;
+                text-decoration: none;
+                padding: 30px;
+            }
+
+            nav a:hover {
+                color: #ffffff;
+            }
+
+            .logo_burgermenu {
+                display: none;
+            }
+
+            #menuknap_wrapper {
+                display: none;
+            }
+
+            nav #section_wrapper {
+                display: none;
+            }
+
+
+            .hidden {
+                opacity: 0;
+                cursor: pointer;
+                display: none;
+            }
+        }
+
+        @media only screen and (max-width: 700px) {
+
+            .menu {
+                display: none;
+                z-index: 2;
+
+            }
+
+            nav .section_wrapper {
+                background-color: #E5E0D9;
+            }
+
+            #menu1 {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 7rem 7rem 7rem;
+                position: absolute;
+                background-color: #E5E0D9;
+                padding-left: 1rem;
+                z-index: 1;
+                margin-top: -1.7vw;
+                overflow-x: hidden;
+
+            }
+
+            #menuknap {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                z-index: 2;
+            }
+
+            #menu1 {
+                position: absolute;
+                padding-top: 5rem;
+                padding-left: 10.5rem;
+                padding-right: 10.5rem;
+                text-align: center;
+                background-color: #E5E0D9;
+                text-decoration: none;
+                font-size: 1.5rem;
+                font-weight: 400;
+                font-family: 'Arvo', serif;
+            }
+
+            #menu1 a {
+                text-decoration: none;
+                color: black;
+            }
+
+            .bar1,
+            .bar2,
+            .bar3 {
+                width: 34px;
+                height: 1px;
+                background-color: black;
+                margin: 6px 0;
+                transition: 0.4s;
+            }
+
+            .change .bar1 {
+                transform: rotate(-45deg) translate(-9px, 6px);
+                transform: rotate(-45deg) translate(-2px, 8px);
+            }
+
+            .change .bar2 {
+                opacity: 0;
+            }
+
+            .change .bar3 {
+                transform: rotate(45deg) translate(-8px, -8px);
+                transform: rotate(45deg) translate(-2px, -8px);
+            }
+
+            .hidden {
+                opacity: 0;
+                cursor: pointer;
+                display: none;
             }
         }
