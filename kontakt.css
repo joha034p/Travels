@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    background-color: #E5E0D9;
+    margin-bottom: -35vw;
+}
+.form_holder {
+    width: 30vw;
+    height: 25vw;
+    background-color: #524135;
+    color: antiquewhite;
+    padding: 2vw;
+    /*font*/
+}
+label,
+input,
+textarea,
+select,
+button {
+    display: block;
+    margin: 1vw;
+    /*Font in button goes here*/
+}
+label {
+    font-family: ;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+input {
+    border: none;
+    width: 17vw;
+    height: 2vw;
+    padding-left: 10px;
+}
+textarea {
+    border: 0;
+    padding: 10px;
+    width: 17vw;
+}
