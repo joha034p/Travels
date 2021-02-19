@@ -1,3 +1,14 @@
+function toggleMenu() {
+    console.log("toggleMenu");
+    document.querySelector("#menu1").classList.toggle("hidden");
+    myFunctionBurger(this);
+}
+
+function myFunctionBurger(x) {
+    console.log("myFunctionBurger");
+    x.classList.toggle("change");
+}
+
 const url = "https://justjourney-1298.restdb.io/rest/destinationer";
 const medieurl = "https://justjourney-1298.restdb.io/media/";
 const options = {
@@ -8,6 +19,7 @@ const options = {
 const main = document.querySelector("main");
 const template = document.querySelector("template").content;
 document.addEventListener("DOMContentLoaded", start);
+document.querySelector("#menuknap").addEventListener("click", toggleMenu);
 let lande;
 let filter = "alle";
 
