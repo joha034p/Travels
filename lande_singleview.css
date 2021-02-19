@@ -29,6 +29,55 @@ header {
         object-fit: cover;
     }
 
+    header menu {
+        position: relative;
+        height: 0;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    nav .menu {
+        display: inline-block;
+        background-color: rgba(255, 255, 255, 0.44);
+        width: 100vw;
+
+    }
+
+    nav a {
+        font-family: 'Arvo', serif;
+        color: black;
+        font-weight: 600;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        padding-left: 14.4vw;
+        padding-right: 11vw;
+        text-align: center;
+        text-decoration: none;
+
+    }
+
+    nav a:hover {
+        color: #ffffff;
+    }
+
+    .logo_burgermenu {
+        display: none;
+    }
+
+    #menuknap_wrapper {
+        display: none;
+    }
+
+    nav #section_wrapper {
+        display: none;
+    }
+
+
+    .hidden {
+        opacity: 0;
+        cursor: pointer;
+        display: none;
+    }
 
 
 
@@ -60,6 +109,7 @@ header {
     }
 
 
+    /*
     #section_1 {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -84,6 +134,9 @@ header {
         position: relative;
         top: -10vw;
     }
+*/
+
+
 
 }
 
@@ -98,6 +151,85 @@ header {
         width: auto;
         height: 60vw;
         object-fit: cover;
+    }
+
+
+    .menu {
+        display: none;
+        z-index: 2;
+
+    }
+
+    nav .section_wrapper {
+        background-color: #E5E0D9;
+    }
+
+    #menu1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 7rem 7rem 7rem;
+        position: absolute;
+        background-color: #E5E0D9;
+        padding-left: 1rem;
+        z-index: 1;
+        margin-top: -1.7vw;
+        overflow-x: hidden;
+
+    }
+
+    #menuknap {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 2;
+    }
+
+    #menu1 {
+        position: absolute;
+        padding-top: 5rem;
+        padding-left: 10.5rem;
+        padding-right: 10.5rem;
+        text-align: center;
+        background-color: #E5E0D9;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-family: 'Arvo', serif;
+    }
+
+    #menu1 a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 34px;
+        height: 1px;
+        background-color: black;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .change .bar1 {
+        transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-2px, 8px);
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-2px, -8px);
+    }
+
+    .hidden {
+        opacity: 0;
+        cursor: pointer;
+        display: none;
     }
 
 

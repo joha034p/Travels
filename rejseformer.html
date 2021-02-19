@@ -10,15 +10,38 @@
 
 <body>
     <header>
+        <nav>
+            <div class="menu">
+                <a href="index.html">HOME</a>
+                <a href="rejseformer.html">TRAVEL</a>
+                <a href="kotakt.html">CONTACT</a>
+            </div>
+        </nav>
+        <nav>
+            <div class="section_wrapper">
+                <div id="menuknap_wrapper">
+                    <div id="menuknap">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </div>
+                <div id="menu1" class="hidden">
+                    <a class="row2" href="index.html">HOME</a>
+                    <a class="row3" href="rejseformer.html">TRAVEL</a>
+                    <a class="row4" href="kotakt.html">CONTACT</a>
+                </div>
+            </div>
+        </nav>
         <video src="video/strandferie.mp4" autoplay muted loop playsinline></video>
         <div id="logo">
-            <img src="Billeder/logo.svg" alt="logo">
+            <img src="Billeder/logocsort.svg" alt="logo">
         </div>
         <h1></h1>
         <p></p>
 
         <!--Menuen med ikoner som knapper-->
-        <nav>
+        <nav id="filterMenu">
             <button data-destination="alle" class="valgt">All</button>
             <button data-destination="Australia">Australia</button>
             <button data-destination="India">India</button>
@@ -53,9 +76,21 @@
     </main>
 
     <footer>
-        <div class="footer_txt"></div>
-        <div class="footer_link"></div>
+        <div class="quote">
+            <h4>“Just your journey, your way”</h4>
+        </div>
+        <div class="footer_txt">
+            <p>© 2021 Just Journey. All rights reserved</p>
+        </div>
+        <div class="footer_facebook">
+            <img src="billeder/Facebookicon.png" alt="facebook">
+        </div>
+        <div class="footer_instagram">
+            <img src="billeder/Instagramicon2.png" alt="instagram">
+        </div>
     </footer>
 
     <script src="rejseformer.js"></script>
-</body></html>
+</body>
+
+</html>
