@@ -14,9 +14,13 @@ h2 {
 }
 #info {
     width: 450px;
-    height: 400px;
+    height: 600px;
     text-align: center;
     margin: 50px;
+}
+img {
+    width: 250px;
+    margin: 20px;
 }
 form {
     width: 450px;
