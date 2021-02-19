@@ -27,9 +27,7 @@ img {
     nav .menu {
         display: inline-block;
         background-color: rgba(255, 255, 255, 0.44);
-        width: 1149px;
-        padding-left: 10vw;
-        padding-right: 10vw;
+        width: 100vw;
 
     }
 
@@ -39,8 +37,8 @@ img {
         font-weight: 600;
         font-size: 1.5rem;
         text-transform: uppercase;
-        padding-left: 13vw;
-        padding-right: 13vw;
+        padding-left: 14.4vw;
+        padding-right: 11vw;
         text-align: center;
         text-decoration: none;
 
@@ -110,7 +108,13 @@ img {
         font-size: 2rem;
     }
 
-    p {
+    .quote h4 {
+        font-family: 'Kumar One Outline', cursive;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    header p {
         text-align: center;
         position: relative;
         top: -25vw;
@@ -126,6 +130,43 @@ img {
         grid-gap: 3vw;
         position: relative;
         top: -10vw;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 0.5fr;
+        text-align: center;
+        margin-top: -25vw;
+
+    }
+
+    footer .quote {
+        grid-column: span 4;
+    }
+
+    footer .footer_txt {
+        grid-column: span 2;
+        grid-row: 2;
+    }
+
+    footer .footer_facebook {
+        grid-column: span 1;
+        grid-row: 2;
+
+    }
+
+    footer .footer_instagram {
+        grid-column: span 1;
+        grid-row: 2;
+    }
+
+    footer img {
+        width: 10%;
+    }
+
+    footer p {
+        font-family: 'Arvo', serif;
     }
 }
 
