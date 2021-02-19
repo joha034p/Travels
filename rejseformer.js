@@ -2,7 +2,7 @@ const url = "https://justjourney-1298.restdb.io/rest/destinationer";
 const medieurl = "https://justjourney-1298.restdb.io/media/";
 const options = {
     headers: {
-        'x-apikey': "d84b88b59ef1b90b1126029d3461c86afb5cc"
+        'x-apikey': "602f73905ad3610fb5bb639c"
     }
 };
 const main = document.querySelector("main");
@@ -38,9 +38,9 @@ function vis(json) {
     lande.forEach(land => {
         if (filter == land.destination || filter == "alle") {
             const klon = template.cloneNode(true);
-            klon.querySelector(".img").src = medieurl + land.billede;
+            klon.querySelector("img").src = medieurl + land.billede;
             klon.querySelector("h3").textContent = land.City;
-            klon.querySelector(".box").addEventListener("click", () => visDetaljer(land));
+            klon.querySelector("article").addEventListener("click", () => visDetaljer(land));
             main.appendChild(klon);
         }
     })
