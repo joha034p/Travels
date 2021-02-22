@@ -30,8 +30,14 @@ function visLande(land) {
     document.querySelector(".stort_billede").src = medieurl + land.billede;
     document.querySelector(".longdescription").textContent = land.longdescription + " ";
     document.querySelector("h1").textContent = land.destination + " ";
-    document.querySelector("h4").textContent = land.shortdescription + " ";
+    document.querySelector("h5").textContent = land.shortdescription + " ";
     document.querySelector("h3").textContent = land.City + " ";
+    document.querySelector(".quote").src = medieurl + land.quote;
+    document.querySelector("button").addEventListener("click", tilbageTilMenu);
 
+}
 
+function tilbageTilMenu() {
+    console.log("tilbageTilMenu");
+    history.back();
 }
