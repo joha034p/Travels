@@ -25,7 +25,7 @@ async function loadJSON() {
 
 function visLande(land) {
     console.log("visLande");
-
+    console.log(medieurl + land.billede);
     document.querySelector(".billede").src = medieurl + land.billede;
 
 
