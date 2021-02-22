@@ -76,16 +76,14 @@
         }
 
         nav {
-            display: flex;
+            display: grid;
             justify-content: center;
-            margin: auto;
-            text-align: center;
-            gap: 10px;
+            grid-gap: 10px;
         }
 
         #filterMenu {
-            padding-bottom: 80px;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            padding: 50px;
         }
 
         button {
@@ -96,7 +94,6 @@
             cursor: pointer;
             font-size: 16px;
             transition: .3s;
-            display: grid;
         }
 
         button:hover {
@@ -111,8 +108,94 @@
 
         }
 
+        .icon_none {
+            width: 40px;
+            height: 54px;
+            opacity: 0;
+        }
+
         .icon_australia {
             background-image: url(billeder/icon/austrailericon.svg);
+            background-size: cover;
+            width: 40px;
+            height: 54px;
+            place-self: center;
+        }
+
+        .icon_india {
+            background-image: url(billeder/icon/india.svg);
+            background-size: cover;
+            width: 40px;
+            height: 54px;
+            place-self: center;
+        }
+
+        .icon_newzealand {
+            background-image: url(billeder/icon/newzealandicon.svg);
+            background-size: cover;
+            width: 40px;
+            height: 54px;
+            place-self: center;
+        }
+
+        .icon_usa {
+            background-image: url(billeder/icon/usaicon.svg);
+            background-size: cover;
+            width: 40px;
+            height: 54px;
+            place-self: center;
+        }
+
+        .icon_italy {
+            background-image: url(billeder/icon/italyicon.svg);
+            background-size: cover;
+            width: 40px;
+            height: 54px;
+            place-self: center;
+        }
+
+        .icon_japan {
+            background-image: url(billeder/icon/japanicon.svg);
+            background-size: cover;
+            width: 40px;
+            height: 54px;
+            place-self: center;
+        }
+
+        .icon_peru {
+            background-image: url(billeder/icon/prauicon.svg);
+            background-size: cover;
+            width: 40px;
+            height: 54px;
+            place-self: center;
+        }
+
+        .icon_denmark {
+            background-image: url(billeder/icon/denmarkicon.svg);
+            background-size: cover;
+            width: 40px;
+            height: 54px;
+            place-self: center;
+        }
+
+        .icon_iceland {
+            background-image: url(billeder/icon/icelandicon.svg);
+            background-size: cover;
+            width: 40px;
+            height: 54px;
+            place-self: center;
+        }
+
+        .icon_sweden {
+            background-image: url(billeder/icon/sweedenicon.svg);
+            background-size: cover;
+            width: 40px;
+            height: 54px;
+            place-self: center;
+        }
+
+        .icon_thailand {
+            background-image: url(billeder/icon/tailandicon.svg);
             background-size: cover;
             width: 40px;
             height: 54px;
