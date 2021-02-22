@@ -27,7 +27,11 @@ function visLande(land) {
     console.log("visLande");
     console.log(medieurl + land.billede);
     document.querySelector(".billede").src = medieurl + land.billede;
+    document.querySelector(".stort_billede").src = medieurl + land.billede;
     document.querySelector(".longdescription").textContent = land.longdescription + " ";
+    document.querySelector("h1").textContent = land.destination + " ";
+    document.querySelector("h4").textContent = land.shortdescription + " ";
+    document.querySelector("h3").textContent = land.City + " ";
 
 
 }
