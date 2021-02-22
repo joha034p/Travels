@@ -3,6 +3,7 @@ body {
     padding: 0;
     background-color: #E5E0D9;
 }
+
 main {
     display: flex;
     justify-content: center;
@@ -10,25 +11,36 @@ main {
     width: 80vw;
     max-width: 1200px;
 }
+
 h1 {
     font-family: 'Kumar One Outline', cursive;
     font-size: 3rem;
 }
+
 h2 {
     font-family: 'Kumar One Outline', cursive;
     font-size: 2rem;
 }
+
 #info {
     width: 450px;
     height: 600px;
     text-align: center;
     margin: 50px;
 }
+
 img {
     width: 250px;
     margin: 20px;
 }
-form {
+
+
+#form_holder {
+    position: relative;
+}
+
+form,
+#thank {
     width: 450px;
     height: 600px;
     background-color: #524135;
@@ -37,8 +49,17 @@ form {
     display: grid;
     justify-content: center;
     margin: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
     /*font*/
 }
+
+#thank {
+    text-align: center;
+
+}
+
 label,
 input,
 textarea,
@@ -48,21 +69,25 @@ button {
     margin: 10px;
     /*Font in button goes here*/
 }
+
 label {
     font-family: ;
     font-size: 1.2rem;
     font-weight: 300;
 }
+
 input {
     width: 250px;
     height: 20px;
     padding: 10px;
 }
+
 textarea {
     width: 250px;
     height: 100px;
     padding: 10px;
 }
+
 button {
     background-color: #E5E0D9;
     color: #524135;
@@ -72,9 +97,11 @@ button {
     border-radius: 15px;
     place-self: center;
 }
+
 button:hover {
     color: #ffffff;
 }
+
 @media screen and (min-width:768px) {
     section {
         display: grid;
@@ -105,11 +132,13 @@ img {
         box-sizing: border-box;
         text-align: center;
     }
+
     nav .menu {
         display: inline-block;
         background-color: rgba(255, 255, 255, 0.44);
         width: 100vw;
     }
+
     nav a {
         font-family: 'Arvo', serif;
         color: black;
@@ -121,64 +150,80 @@ img {
         text-align: center;
         text-decoration: none;
     }
+
     nav a:hover {
         color: #ffffff;
     }
+
     .logo_burgermenu {
         display: none;
     }
+
     #menuknap_wrapper {
         display: none;
     }
+
     nav #section_wrapper {
         display: none;
     }
+
     .hidden {
         opacity: 0;
         cursor: pointer;
         display: none;
     }
+
     .quote h4 {
         font-family: 'Kumar One Outline', cursive;
         text-align: center;
         font-size: 3rem;
     }
+
     footer {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-auto-rows: 0.5fr;
         text-align: center;
     }
+
     footer .quote {
         grid-column: span 4;
     }
+
     footer .footer_txt {
         grid-column: span 2;
         grid-row: 2;
     }
+
     footer .footer_facebook {
         grid-column: span 1;
         grid-row: 2;
     }
+
     footer .footer_instagram {
         grid-column: span 1;
         grid-row: 2;
     }
+
     footer img {
         width: 10%;
     }
+
     footer p {
         font-family: 'Arvo', serif;
     }
 }
+
 @media only screen and (max-width: 800px) {
     .menu {
         display: none;
         z-index: 2;
     }
+
     nav .section_wrapper {
         background-color: #E5E0D9;
     }
+
     #menu1 {
         display: grid;
         grid-template-columns: 1fr;
@@ -190,12 +235,14 @@ img {
         margin-top: -1.7vw;
         overflow-x: hidden;
     }
+
     #menuknap {
         position: absolute;
         top: 10px;
         right: 10px;
         z-index: 2;
     }
+
     #menu1 {
         position: absolute;
         padding-top: 5rem;
@@ -208,10 +255,12 @@ img {
         font-weight: 400;
         font-family: 'Arvo', serif;
     }
+
     #menu1 a {
         text-decoration: none;
         color: black;
     }
+
     .bar1,
     .bar2,
     .bar3 {
@@ -221,64 +270,81 @@ img {
         margin: 6px 0;
         transition: 0.4s;
     }
+
     .change .bar1 {
         transform: rotate(-45deg) translate(-9px, 6px);
         transform: rotate(-45deg) translate(-2px, 8px);
     }
+
     .change .bar2 {
         opacity: 0;
     }
+
     .change .bar3 {
         transform: rotate(45deg) translate(-8px, -8px);
         transform: rotate(45deg) translate(-2px, -8px);
     }
+
     .hidden {
         opacity: 0;
         cursor: pointer;
         display: none;
     }
+
     .box1 {
         margin-bottom: -10vw;
     }
+
     .box2 {
         margin-bottom: -10vw;
     }
+
     .box3 {
         margin-bottom: -10vw;
     }
+
     .box4 {
         margin-bottom: -10vw;
     }
+
     .box5 {
         margin-bottom: -10vw;
     }
+
     .box6 {
         margin-bottom: -10vw;
     }
+
     .quote h4 {
         font-family: 'Kumar One Outline', cursive;
         text-align: center;
         font-size: 3rem;
     }
+
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0.5fr 0.5fr;
         text-align: center;
     }
+
     footer .footer_txt {
         grid-column-start: 1;
         grid-column-end: span 2;
     }
+
     footer .footer_facebook {
         grid-template-rows: 2 / 3;
     }
+
     footer .footer_instagram {
         grid-template-rows: 2 / 3;
     }
+
     footer img {
         width: 20%;
     }
+
     footer p {
         font-family: 'Arvo', serif;
     }
