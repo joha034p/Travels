@@ -1,34 +1,121 @@
 body {
     margin: 0;
-    background-color: #E5E0D9;
+    background-color: #eef1f2;
     margin-bottom: -35vw;
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
-header {
+header img {
     margin-bottom: -10vw;
 }
 
+/*FOOTER*/
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 0.5fr;
+    text-align: center;
+    padding-top: 10vw;
 
+}
+
+footer .quote {
+    grid-column: span 4;
+}
+
+footer .footer_txt {
+    grid-column: span 2;
+    grid-row: 2;
+}
+
+footer .footer_facebook {
+    grid-column: span 1;
+    grid-row: 2;
+}
+
+footer .footer_facebook img {
+    width: 20%;
+    height: auto;
+}
+
+
+footer .footer_instagram {
+    grid-column: span 1;
+    grid-row: 2;
+}
+
+footer .footer_instagram img {
+    width: 20%;
+    height: auto;
+}
+
+footer img {
+    width: 10%;
+}
+
+footer p {
+    font-family: 'Arvo', serif;
+}
 
 
 /*Desktop*/
 @media only screen and (min-width: 600px) {
 
-    #video {
+    .section_0 img {
         position: relative;
         top: -1vw;
         z-index: -1;
         min-width: 100%;
         width: auto;
-        height: 35vw;
+        height: 30vw;
         object-fit: cover;
     }
 
+    article {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 10vw;
+        margin-top: 0;
+        grid-gap: 3vw;
+        position: relative;
+        padding-top: 50px;
+
+    }
+
+    .section_3 img {
+        max-width: 50%;
+    }
+
+    header {
+        margin-bottom: -16vw;
+    }
+
+    /*BUTTON*/
+    button {
+        border: none;
+        outline: none;
+        padding: 10px 16px;
+        background-color: #ffffff;
+        cursor: pointer;
+        font-size: 16px;
+        transition: .3s;
+        margin-left: 10vw;
+        margin-top: 20vw;
+    }
+
+    button:hover {
+        background-color: #333333;
+        color: white;
+        opacity: 100%;
+    }
+
+
+
+    /*MENU*/
     header menu {
         position: relative;
         height: 0;
@@ -38,7 +125,7 @@ header {
 
     nav .menu {
         display: inline-block;
-        background-color: rgba(255, 255, 255, 0.44);
+        background-color: white;
         width: 100vw;
 
     }
@@ -57,7 +144,7 @@ header {
     }
 
     nav a:hover {
-        color: #ffffff;
+        color: #E5E0D9;
     }
 
     .logo_burgermenu {
@@ -80,6 +167,7 @@ header {
     }
 
 
+    /*FONTS*/
 
     h2 {
         text-align: center;
@@ -92,16 +180,24 @@ header {
     h1 {
         text-align: center;
         position: relative;
-        top: -29vw;
+        top: -10vw;
         font-family: 'Kumar One Outline', cursive;
         font-size: 4rem;
     }
 
-
-    h4 {
+    h3 {
         text-align: center;
         position: relative;
-        top: -30vw;
+        font-family: 'Kumar One Outline',
+            cursive;
+        font-size: 2rem;
+    }
+
+
+    h5 {
+        text-align: center;
+        position: relative;
+        top: -10vw;
         font-family: 'Arvo',
             serif;
         margin-left: 10vw;
@@ -109,51 +205,60 @@ header {
     }
 
 
-    /*
-    #section_1 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin: 10vw;
-        grid-gap: 3vw;
-        position: relative;
-        top: -10vw;
-    }
-
-    #section_2 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin: 10vw;
-        grid-gap: 3vw;
-        position: relative;
-        top: -10vw;
-    }
-
-    #section_3 {
-
-        margin: 10vw;
-        position: relative;
-        top: -10vw;
-    }
-*/
-
-
 
 }
+
+
 
 /*mobile version*/
 
 @media only screen and (max-width: 600px) {
-    #video {
+
+    img {
         position: relative;
         top: -1vw;
         z-index: -1;
+
         min-width: auto;
         width: auto;
+
         height: 60vw;
         object-fit: cover;
     }
 
+    main {
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: -10vw;
+        position: relative;
+        top: -10vw;
+    }
 
+    .section_3 {
+        margin-top: 50px;
+    }
+
+    /*BUTTON*/
+    button {
+        border: none;
+        outline: none;
+        padding: 10px 16px;
+        background-color: #ffffff;
+        cursor: pointer;
+        font-size: 16px;
+        transition: .3s;
+        margin-bottom: 20px;
+    }
+
+    button:hover {
+        background-color: #333333;
+        color: white;
+        opacity: 100%;
+    }
+
+
+
+    /*MENU*/
     .menu {
         display: none;
         z-index: 2;
@@ -234,7 +339,7 @@ header {
 
 
 
-
+    /*FONTS*/
     h1 {
         text-align: center;
         position: relative;
@@ -244,13 +349,21 @@ header {
     }
 
     h2 {
-        text-align: center;
+        text-align: left;
         position: relative;
         font-family: 'Kumar One Outline', cursive;
         font-size: 2rem;
     }
 
-    h4 {
+    h3 {
+        text-align: left;
+        position: relative;
+        font-family: 'Kumar One Outline',
+            cursive;
+        font-size: 2rem;
+    }
+
+    h5 {
         text-align: center;
         position: relative;
         top: -65vw;
@@ -258,15 +371,6 @@ header {
         margin-left: 10vw;
         margin-right: 10vw;
     }
-
-    main {
-        margin-left: 5vw;
-        margin-right: 5vw;
-        margin-top: -10vw;
-        position: relative;
-        top: -10vw;
-    }
-
 
 
 }
