@@ -49,7 +49,7 @@
             </div>
 
             <div id="form_holder">
-                <form>
+                <form action="javascript:openThank()">
                     <h2>Contact</h2>
 
                     <label>
@@ -64,10 +64,10 @@
                         Message
                         <textarea placeholder="How can we help you?" name="message" rows="5"></textarea>
                     </label>
-                    <button id="send" onclick="openThank()">Send</button>
+                    <button id="send">Send</button>
                 </form>
-                <div id="thank">
-                    <h2>Messadge sendt <br> Thank you </h2>
+                <div id="thank" class="remove">
+                    <h2>Messadge sent <br> Thank you </h2>
                     <button onclick="closeThank()">Back</button>
                 </div>
             </div>

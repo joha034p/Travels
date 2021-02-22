@@ -57,7 +57,11 @@ form,
 
 #thank {
     text-align: center;
+}
 
+.remove {
+    opacity: 0;
+    z-index: -1;
 }
 
 label,
