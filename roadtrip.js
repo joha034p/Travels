@@ -21,7 +21,7 @@ const template = document.querySelector("template").content;
 document.addEventListener("DOMContentLoaded", start);
 document.querySelector("#menuknap").addEventListener("click", toggleMenu);
 let lande;
-let filter = "India";
+let filter = "Australia";
 
 
 function start() {
