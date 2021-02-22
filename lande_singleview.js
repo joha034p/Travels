@@ -27,6 +27,7 @@ function visLande(land) {
     console.log("visLande");
 
     document.querySelector(".billede").src = medieurl + land.billede;
+    document.querySelector(".longdescription").textContent = land.longdescription + " ";
 
 
 }
