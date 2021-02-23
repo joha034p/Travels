@@ -5,15 +5,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Backpacking</title>
+    <!--links til font typer-->
     <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kumar+One+Outline&display=swap" rel="stylesheet">
+    <!--link til hvilken css-fil, stylingen skal tage udgangspunkt i-->
     <link rel="stylesheet" href="backpacking.css">
 </head>
 
 <body>
+    <!--header-tag = øverst på sitet-->
     <header>
         <nav>
+            <!--div der kapsler 3 links inde-->
             <div class="menu">
                 <a href="index.html">HOME</a>
                 <a href="rejseformer.html">TRAVEL</a>
@@ -29,6 +33,7 @@
                         <div class="bar3"></div>
                     </div>
                 </div>
+                <!--div med class "hidden" der gør at den er skjult (bruges til burgermenu)-->
                 <div id="menu1" class="hidden">
                     <a class="row2" href="index.html">HOME</a>
                     <a class="row3" href="rejseformer.html">TRAVEL</a>
@@ -37,17 +42,19 @@
             </div>
         </nav>
         <div id="video">
+            <!--her bestemmes der at videoen automatisk skal gå i gang, være muted og skal loope-->
             <video id="video" poster="" autoplay muted loop playsinline>
                 <source src="http://andreasmh.dk/kea/Videoer_JustJourney/backpack_justjourney.mp4">
             </video>
         </div>
+        <!--tryk på logoet = kom tilbage til index.html (forsiden)-->
         <div id="logo">
             <a href="index.html"><img src="billeder/logocdark.svg" alt=""></a>
         </div>
         <h1>BACKPACKING</h1>
         <p>Curious and adventurous? Grab your backpack, and find your journey.</p>
 
-        <!--Menuen med ikoner som knapper-->
+        <!--Filtreringsmenuen med ikoner-->
         <h2>Travel suggestions</h2>
         <nav id="filterMenu">
             <div class="button_holder">
@@ -101,6 +108,7 @@
         </nav>
     </header>
 
+    <!--hovedindholdet af sitet defineres i main-tag-->
     <main>
         <template>
             <article>
@@ -112,6 +120,7 @@
         </template>
     </main>
 
+    <!--footer-tag = bunden af sitet-->
     <footer>
         <div class="quote">
             <h4>“Just your journey, your way”</h4>
@@ -127,6 +136,7 @@
         </div>
     </footer>
 
+    <!--henvis til hvilken JavaScript fil der skal lyttes til-->
     <script src="backpacking.js"></script>
 </body>
 

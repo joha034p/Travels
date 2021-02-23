@@ -18,8 +18,7 @@ function myFunctionBurger(x) {
     x.classList.toggle("change");
 }
 
-//thak for besked
-
+//respons på kontakt siden efter man har sendt en besked
 function openThank() {
     console.log("open thank");
     document.getElementById("thank").classList.remove("remove");
