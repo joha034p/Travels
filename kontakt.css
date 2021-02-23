@@ -22,6 +22,10 @@ h2 {
     font-size: 2rem;
 }
 
+p {
+    font-family: 'Arvo', serif;
+}
+
 #info {
     width: 450px;
     height: 600px;
