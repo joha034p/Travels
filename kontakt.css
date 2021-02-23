@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #E5E0D9;
+    background-color: #eef1f2;
 }
 
 main {
@@ -57,6 +57,7 @@ form,
     top: 0;
     left: 0;
     /*font*/
+    font-family: 'Arvo', serif;
 }
 
 #thank {
@@ -75,6 +76,7 @@ select,
 button {
     display: block;
     margin: 10px;
+    font-family: 'Arvo', serif;
     /*Font in button goes here*/
 }
 
