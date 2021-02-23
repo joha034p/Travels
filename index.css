@@ -17,7 +17,11 @@ a {
     text-decoration: none;
 }
 
+/* laptop */
+
 @media only screen and (min-width: 768px) {
+
+    /* menu på laptop */
 
     header {
         margin-bottom: -16vw;
@@ -56,6 +60,8 @@ a {
         color: #4d5157;
     }
 
+    /* burgermenu sjules på laptop */
+
     #menuknap_wrapper {
         display: none;
     }
@@ -71,6 +77,8 @@ a {
         display: none;
     }
 
+    /* video på forside*/
+
     #video {
         margin: 0;
         position: relative;
@@ -81,6 +89,8 @@ a {
         height: 40vw;
         object-fit: cover;
     }
+
+    /* video på forside*/
 
     #logo {
         font-size: 0rem;
@@ -142,6 +152,8 @@ a {
         top: -10vw;
     }
 
+    /* footer på laptop */
+
     footer {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -181,7 +193,11 @@ a {
     }
 }
 
+/* mobile  */
+
 @media only screen and (max-width: 768px) {
+
+    /* burgermenu */
 
     .menu {
         display: none;
@@ -261,6 +277,8 @@ a {
         display: none;
     }
 
+    /* video på forside */
+
 
     #video {
         position: relative;
@@ -272,6 +290,8 @@ a {
         object-fit: cover;
         overflow-x: hidden;
     }
+
+    /* logo over video på forside  */
 
     #logo {
         font-size: 0rem;
@@ -344,6 +364,8 @@ a {
     .box6 {
         margin-bottom: -10vw;
     }
+
+    /* footer på mobile */
 
 
     footer {

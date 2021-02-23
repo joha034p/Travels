@@ -9,6 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Kumar+One+Outline&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="billeder/FAVICON%20.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="billeder/FAVICON%20.png">
+    <meta name="robots" content="noindex">
     <link rel="stylesheet" href="kontakt.css">
 </head>
 
@@ -49,9 +52,11 @@
             </div>
 
             <div id="form_holder">
+                <!--form-tag der skal lytte til javascript's function "openThank"-->
                 <form action="javascript:openThank()">
                     <h2>Contact</h2>
 
+                    <!--hvad der skal stå i de forskellige tekstbokse-->
                     <label>
                         Name
                         <input placeholder="What's your name?" type="text" name="name" required>
@@ -67,7 +72,7 @@
                     <button id="send">Send</button>
                 </form>
                 <div id="thank" class="remove">
-                    <h2>Messadge sent <br> Thank you </h2>
+                    <h2>Message sent <br> Thank you </h2>
                     <button onclick="closeThank()">Back</button>
                 </div>
             </div>
