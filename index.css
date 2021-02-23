@@ -32,8 +32,10 @@ a {
 
     nav .menu {
         display: inline-block;
-        background-color: white;
+        background-color: #eef1f2;
         width: 100vw;
+        position: absolute;
+        z-index: 100;
         text-align: center;
     }
 
@@ -45,14 +47,13 @@ a {
         text-transform: uppercase;
         text-align: center;
         text-decoration: none;
-        padding: 30px;
+        padding: 0 30px;
         margin-left: 2.5vw;
-
-
+        transition: .1s;
     }
 
     nav a:hover {
-        color: #ffffff;
+        color: #4d5157;
     }
 
     #menuknap_wrapper {
