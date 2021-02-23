@@ -61,6 +61,12 @@ footer p {
     font-family: 'Arvo', serif;
 }
 
+.quote h4 {
+    font-family: 'Kumar One Outline', cursive;
+    text-align: center;
+    font-size: 3rem;
+}
+
 
 /*Desktop*/
 @media only screen and (min-width: 600px) {
@@ -75,6 +81,22 @@ footer p {
         object-fit: cover;
     }
 
+
+    /*LOGO*/
+    #logo {
+        font-size: 0rem;
+        position: relative;
+        top: -15vw;
+        padding-top: 0px;
+        width: 20%;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+
     article {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -86,9 +108,6 @@ footer p {
 
     }
 
-    .section_3 img {
-        max-width: 50%;
-    }
 
     header {
         margin-bottom: -16vw;
@@ -125,9 +144,11 @@ footer p {
 
     nav .menu {
         display: inline-block;
-        background-color: white;
+        background-color: #eef1f2;
         width: 100vw;
-
+        position: absolute;
+        z-index: 100;
+        text-align: center;
     }
 
     nav a {
@@ -136,19 +157,15 @@ footer p {
         font-weight: 600;
         font-size: 1.5rem;
         text-transform: uppercase;
-        padding-left: 14.4vw;
-        padding-right: 11vw;
         text-align: center;
         text-decoration: none;
-
+        padding: 0 30px;
+        margin-left: 2.5vw;
+        transition: .1s;
     }
 
     nav a:hover {
-        color: #E5E0D9;
-    }
-
-    .logo_burgermenu {
-        display: none;
+        color: #4d5157;
     }
 
     #menuknap_wrapper {
@@ -166,7 +183,6 @@ footer p {
         display: none;
     }
 
-
     /*FONTS*/
 
     h2 {
@@ -180,7 +196,7 @@ footer p {
     h1 {
         text-align: center;
         position: relative;
-        top: -10vw;
+        top: -0vw;
         font-family: 'Kumar One Outline', cursive;
         font-size: 4rem;
     }
@@ -188,8 +204,7 @@ footer p {
     h3 {
         text-align: center;
         position: relative;
-        font-family: 'Kumar One Outline',
-            cursive;
+        font-family: 'Kumar One Outline', cursive;
         font-size: 2rem;
     }
 
@@ -204,6 +219,17 @@ footer p {
         margin-right: 10vw;
     }
 
+    header p {
+        font-family: 'Arvo', serif;
+        text-align: center;
+        position: relative;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
+    p {
+        font-family: 'Arvo', serif;
+    }
 
 
 }
@@ -214,16 +240,10 @@ footer p {
 
 @media only screen and (max-width: 600px) {
 
-    img {
-        position: relative;
-        top: -1vw;
-        z-index: -1;
 
-        min-width: auto;
-        width: auto;
 
-        height: 60vw;
-        object-fit: cover;
+    article {
+        padding-bottom: 50px;
     }
 
     main {
@@ -234,9 +254,33 @@ footer p {
         top: -10vw;
     }
 
-    .section_3 {
-        margin-top: 50px;
+    .section_0 img {
+        position: relative;
+        top: -1vw;
+        z-index: -1;
+        min-width: auto;
+        width: auto;
+        height: 60vw;
+        object-fit: cover;
+        overflow-x: hidden;
     }
+
+
+    /*LOGO*/
+    #logo img {
+        font-size: 0rem;
+        position: relative;
+        top: -30vw;
+        padding-top: 0px;
+        width: 20%;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+
 
     /*BUTTON*/
     button {
@@ -338,12 +382,11 @@ footer p {
     }
 
 
-
     /*FONTS*/
     h1 {
         text-align: center;
         position: relative;
-        top: -55vw;
+        top: -10vw;
         font-family: 'Kumar One Outline', cursive;
         font-size: 4rem;
     }
@@ -372,5 +415,19 @@ footer p {
         margin-right: 10vw;
     }
 
+    header p {
+        text-align: center;
+        position: relative;
+        top: -20vw;
+        font-family: 'Arvo', serif;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        margin-bottom: 20vw;
 
+    }
+
+
+    p {
+        font-family: 'Arvo', serif;
+    }
 }
