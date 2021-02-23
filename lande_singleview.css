@@ -88,6 +88,12 @@ header img {
 
 
     /*MENU*/
+    /* menu på laptop */
+
+    header {
+        margin-bottom: -16vw;
+    }
+
     header menu {
         position: relative;
         height: 0;
@@ -120,6 +126,8 @@ header img {
     nav a:hover {
         color: #4d5157;
     }
+
+    /* burgermenu sjules på laptop */
 
     #menuknap_wrapper {
         display: none;
@@ -249,8 +257,10 @@ header img {
         position: relative;
         top: -1vw;
         z-index: -1;
+/*
         min-width: auto;
         width: auto;
+*/
         height: 60vw;
         object-fit: cover;
         overflow-x: hidden;
@@ -293,7 +303,7 @@ header img {
 
 
 
-    /*MENU*/
+    /*BURGERMENU*/
     .menu {
         display: none;
         z-index: 2;
@@ -326,11 +336,11 @@ header img {
 
     #menu1 {
         position: absolute;
-        padding-top: 5rem;
-        padding-left: 10.5rem;
-        padding-right: 10.5rem;
+        padding-top: 13vh;
+        padding-left: 34vw;
+        padding-right: 33.5vw;
         text-align: center;
-        background-color: #E5E0D9;
+        background-color: #73B3BD;
         text-decoration: none;
         font-size: 1.5rem;
         font-weight: 400;
