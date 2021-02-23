@@ -7,9 +7,13 @@ body {
 main {
     display: flex;
     justify-content: center;
-    margin: 0 auto;
+    margin: 0px auto;
     width: 80vw;
     max-width: 1200px;
+}
+
+section {
+    margin: 50px;
 }
 
 h1 {
@@ -47,8 +51,8 @@ form,
 #thank {
     width: 450px;
     height: 600px;
-    background-color: #524135;
-    color: antiquewhite;
+    background-color: #73B3BD;
+    color: black;
     padding: 10px;
     display: grid;
     justify-content: center;
@@ -99,8 +103,8 @@ textarea {
 }
 
 button {
-    background-color: #E5E0D9;
-    color: #524135;
+    background-color: black;
+    color: #eef1f2;
     cursor: pointer;
     width: 80px;
     height: 40px;
@@ -109,7 +113,8 @@ button {
 }
 
 button:hover {
-    color: #ffffff;
+    background-color: #eef1f2;
+    color: black;
 }
 
 @media screen and (min-width:768px) {
