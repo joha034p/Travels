@@ -138,9 +138,18 @@ img {
     }
 
     nav .menu {
+        /*
         display: inline-block;
         background-color: rgba(255, 255, 255, 0.44);
         width: 100vw;
+
+*/
+        display: inline-block;
+        background-color: #eef1f2;
+        width: 100vw;
+        position: absolute;
+        z-index: 100;
+        text-align: center;
     }
 
     nav a {
@@ -149,10 +158,11 @@ img {
         font-weight: 600;
         font-size: 1.5rem;
         text-transform: uppercase;
-        padding-left: 14.4vw;
-        padding-right: 11vw;
         text-align: center;
         text-decoration: none;
+        padding: 0 30px;
+        margin-left: 2.5vw;
+        transition: .1s;
     }
 
     nav a:hover {
