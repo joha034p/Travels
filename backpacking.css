@@ -207,7 +207,6 @@
             font-size: 3rem;
         }
 
-<<<<<<< HEAD
         footer {
             /*grid med 4 kolonner*/
             display: grid;
@@ -249,21 +248,18 @@
             width: 20%;
             height: auto;
         }
-=======
->>>>>>> origin/master
 
 
 
-<<<<<<< HEAD
+
 
 
         /*en media query der bestemmer hvad der skal ske med indholdet, når vinduet er 700+px bredt*/
-        @media only screen and (min-width: 700px) {
+
+        @media only screen and (min-width: 768px) {
 
             /*alt i main tagget fordeles på 2 kolonner*/
-=======
-        @media only screen and (min-width: 768px) {
->>>>>>> origin/master
+
             main {
                 grid-template-columns: 1fr 1fr;
             }
@@ -345,7 +341,7 @@
 
             h1 {
                 font-family: 'Kumar One Outline', cursive;
-                font-size: 4rem;
+                font-size: 10vw;
                 margin-top: -16vw;
             }
 
@@ -400,13 +396,9 @@
             }
         }
 
-<<<<<<< HEAD
-        /*media query der bestemmer hvad der skal ske med indholdet, når vinduets bredde er under 700px*/
-        @media only screen and (max-width: 700px) {
-=======
-        @media only screen and (max-width: 768px) {
->>>>>>> origin/master
 
+
+        @media only screen and (max-width: 768px) {
             .menu {
                 display: none;
                 z-index: 2;
@@ -515,7 +507,7 @@
 
             h1 {
                 font-family: 'Kumar One Outline', cursive;
-                font-size: 15vw;
+                font-size: 10vw;
                 margin-top: -40vw;
             }
 
@@ -523,7 +515,7 @@
             h2 {
                 padding-top: 15vw;
                 font-family: 'Kumar One Outline', cursive;
-                font-size: 10vw;
+                font-size: 8vw;
             }
 
             p {
