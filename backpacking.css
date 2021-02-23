@@ -38,12 +38,12 @@
 
         /*begræns img-containerens størrelse, så billedet indeni kan få lov til at ændre i størrelsen uden, at det går ud over containerens grænser*/
         .img-container {
-            height: 300px;
             overflow: hidden;
         }
 
         article {
-            padding: 20px;
+            padding: 30px;
+            margin: auto;
         }
 
         .img-container img {
@@ -65,9 +65,13 @@
 
         main {
             display: grid;
-            margin: 100px;
+            margin: auto;
             padding: 10px;
             padding-top: 15vw;
+        }
+
+        h3 {
+            font-family: 'Arvo', serif;
         }
 
         p,
@@ -87,7 +91,6 @@
             grid-gap: 10px;
             margin: 0 auto;
             /*dets maksimum bredde er 70vw*/
-            max-width: 70vw;
         }
 
         button {
@@ -262,12 +265,13 @@
 
             main {
                 grid-template-columns: 1fr 1fr;
+                margin: 100px;
             }
 
             .img-container {
+                /*bredden på .img-container kan ikke overskride 300px*/
                 height: auto;
-                /*højden på .img-container kan ikke overskride 350px*/
-                max-height: 350px;
+                max-width: 400px;
             }
 
             main img {
@@ -284,6 +288,10 @@
                 height: 0;
                 box-sizing: border-box;
                 text-align: center;
+            }
+
+            #filterMenu {
+                max-width: 70vw;
             }
 
             nav .menu {
