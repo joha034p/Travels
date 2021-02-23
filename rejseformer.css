@@ -67,7 +67,7 @@
             display: grid;
             margin: 100px;
             padding: 10px;
-            padding-top: 80px;
+            padding-top: 15vw;
         }
 
         h2,
@@ -75,34 +75,119 @@
             text-align: center;
         }
 
+
         nav {
-            display: flex;
-            justify-content: center;
-            margin: auto;
-            text-align: center;
-            gap: 10px;
+            display: grid;
+            grid-gap: 10px;
+            margin: 0 auto;
+            max-width: 70vw;
+
         }
 
         #filterMenu {
-            padding-bottom: 80px;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            padding: 50px;
+
         }
 
         button {
             border: none;
             outline: none;
-            padding: 10px 16px;
             background-color: #ffffff;
             cursor: pointer;
             font-size: 16px;
             transition: .3s;
-            display: grid;
+            width: 120px;
+            height: 50px;
+
         }
 
         button:hover {
             background-color: #333333;
             color: white;
             opacity: 100%;
+        }
+
+        .button_holder {
+            display: grid;
+            grid-gap: 5px;
+            padding-top: 40px;
+
+        }
+
+        .icon_none {
+            width: 40px;
+            height: 54px;
+            opacity: 0;
+        }
+
+        .icon_australia,
+        .icon_india,
+        .icon_newzealand,
+        .icon_usa,
+        .icon_italy,
+        .icon_japan,
+        .icon_peru,
+        .icon_denmark,
+        .icon_iceland,
+        .icon_sweden,
+        .icon_thailand {
+            background-size: cover;
+            width: 40px;
+            height: 54px;
+            place-self: center;
+            filter: invert(43%) sepia(17%) saturate(1512%) hue-rotate(159deg) brightness(94%) contrast(92%);
+        }
+
+        .icon_australia {
+            background-image: url(billeder/icon/austrailericon.svg);
+        }
+
+        .icon_india {
+            background-image: url(billeder/icon/india.svg);
+        }
+
+        .icon_newzealand {
+            background-image: url(billeder/icon/newzealandicon.svg);
+        }
+
+        .icon_usa {
+            background-image: url(billeder/icon/usaicon.svg);
+        }
+
+        .icon_italy {
+            background-image: url(billeder/icon/italyicon.svg);
+
+        }
+
+        .icon_japan {
+            background-image: url(billeder/icon/japanicon.svg);
+
+        }
+
+        .icon_peru {
+            background-image: url(billeder/icon/prauicon.svg);
+
+        }
+
+        .icon_denmark {
+            background-image: url(billeder/icon/denmarkicon.svg);
+
+        }
+
+        .icon_iceland {
+            background-image: url(billeder/icon/icelandicon.svg);
+
+        }
+
+        .icon_sweden {
+            background-image: url(billeder/icon/sweedenicon.svg);
+
+        }
+
+        .icon_thailand {
+            background-image: url(billeder/icon/tailandicon.svg);
+
         }
 
         .valgt {
@@ -195,8 +280,7 @@
             nav .menu {
                 display: inline-block;
                 background-color: rgba(255, 255, 255, 0.44);
-                width: 100vw;
-
+                text-align: center;
             }
 
             nav a {

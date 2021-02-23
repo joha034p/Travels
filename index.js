@@ -17,3 +17,14 @@ function myFunctionBurger(x) {
     console.log("myFunctionBurger");
     x.classList.toggle("change");
 }
+
+//thak for besked
+
+function openThank() {
+    console.log("open thank");
+    document.getElementById("thank").classList.remove("remove");
+}
+
+function closeThank() {
+    document.getElementById("thank").classList.add("remove");
+}

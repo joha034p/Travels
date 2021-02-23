@@ -1,15 +1,21 @@
 body {
     margin: 0;
-    background-color: #E5E0D9;
+    background-color: #eef1f2;
     margin-bottom: -35vw;
 }
 
 img {
     max-width: 100%;
     height: auto;
-
 }
 
+main img {
+    opacity: 0.5;
+}
+
+a {
+    text-decoration: none;
+}
 
 @media only screen and (min-width: 800px) {
 
@@ -26,9 +32,11 @@ img {
 
     nav .menu {
         display: inline-block;
-        background-color: rgba(255, 255, 255, 0.44);
+        background-color: #eef1f2;
         width: 100vw;
-
+        position: absolute;
+        z-index: 100;
+        text-align: center;
     }
 
     nav a {
@@ -37,19 +45,15 @@ img {
         font-weight: 600;
         font-size: 1.5rem;
         text-transform: uppercase;
-        padding-left: 14.4vw;
-        padding-right: 11vw;
         text-align: center;
         text-decoration: none;
-
+        padding: 0 30px;
+        margin-left: 2.5vw;
+        transition: .1s;
     }
 
     nav a:hover {
-        color: #ffffff;
-    }
-
-    .logo_burgermenu {
-        display: none;
+        color: #4d5157;
     }
 
     #menuknap_wrapper {
@@ -103,9 +107,14 @@ img {
         text-align: center;
         position: relative;
         top: -10vw;
-        color: white;
+        color: #000000;
         font-family: 'Kumar One Outline', cursive;
         font-size: 2rem;
+        text-decoration: none;
+    }
+
+    h3:hover {
+        color: #4d5157;
     }
 
     .quote h4 {
@@ -290,6 +299,7 @@ img {
         color: white;
         font-family: 'Kumar One Outline', cursive;
         font-size: 2rem;
+        text-decoration: none;
     }
 
     p {
