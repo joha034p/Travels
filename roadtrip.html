@@ -36,28 +36,41 @@
         </nav>
         <video src="video/strandferie.mp4" autoplay muted loop playsinline></video>
         <div id="logo">
-            <img src="Billeder/logocdark.svg" alt="logo">
+            <a href="index.html"><img src="billeder/logocdark.svg" alt=""></a>
         </div>
         <h1>ROADTRIP</h1>
         <p>Like to make memories along the way? Take control and pursue a journey on wheels.</p>
 
         <!--Menuen med ikoner som knapper-->
+        <h2>Travel suggestions</h2>
         <nav id="filterMenu">
-            <button data-destination="Australia" class="valgt">Australia</button>
-            <button data-destination="New Zealand">New Zealand</button>
-            <button data-destination="USA">USA</button>
-            <button data-destination="Iceland">Iceland</button>
-            <button data-destination="Thailand">Thailand</button>
-            <!--
-            <div class="ikon1"></div>
-            <div class="ikon2"></div>
-            <div class="ikon3"></div>
-            <div class="ikon4"></div>
--->
+            <div class="button_holder">
+                <div class="icon_none"></div>
+                <button data-destination="alle" class="valgt">All</button>
+            </div>
+            <div class="button_holder">
+                <div class="icon_australia"></div>
+                <button data-destination="Australia">Australia</button>
+            </div>
+            <div class="button_holder">
+                <div class="icon_newzealand"></div>
+                <button data-destination="New Zealand">New Zealand</button>
+            </div>
+            <div class="button_holder">
+                <div class="icon_usa"></div>
+                <button data-destination="USA">USA</button>
+            </div>
+            <div class="button_holder">
+                <div class="icon_iceland"></div>
+                <button data-destination="Iceland">Iceland</button>
+            </div>
+            <div class="button_holder">
+                <div class="icon_thailand"></div>
+                <button data-destination="Thailand">Thailand</button>
+            </div>
         </nav>
     </header>
 
-    <h2>Travel suggestions</h2>
     <main>
         <template>
             <article>

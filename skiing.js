@@ -21,7 +21,7 @@ const template = document.querySelector("template").content;
 document.addEventListener("DOMContentLoaded", start);
 document.querySelector("#menuknap").addEventListener("click", toggleMenu);
 let lande;
-let filter = "India";
+let filter = "alle";
 
 
 function start() {
@@ -48,7 +48,7 @@ function vis(json) {
     console.log(json);
     main.textContent = "";
     lande.forEach(land => {
-        if (filter == land.destination) {
+        if (filter == land.destination || filter == "alle") {
             const klon = template.cloneNode(true);
             klon.querySelector("img").src = medieurl + land.billede;
             klon.querySelector("h3").textContent = land.City;
