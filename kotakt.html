@@ -52,9 +52,11 @@
             </div>
 
             <div id="form_holder">
+                <!--form-tag der skal lytte til javascript's function "openThank"-->
                 <form action="javascript:openThank()">
                     <h2>Contact</h2>
 
+                    <!--hvad der skal stå i de forskellige tekstbokse-->
                     <label>
                         Name
                         <input placeholder="What's your name?" type="text" name="name" required>
@@ -70,7 +72,7 @@
                     <button id="send">Send</button>
                 </form>
                 <div id="thank" class="remove">
-                    <h2>Messadge sent <br> Thank you </h2>
+                    <h2>Message sent <br> Thank you </h2>
                     <button onclick="closeThank()">Back</button>
                 </div>
             </div>
