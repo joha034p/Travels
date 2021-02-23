@@ -29,9 +29,10 @@ function visLande(land) {
     document.querySelector(".stort_billede").src = medieurl + land.billede;
     document.querySelector(".longdescription").textContent = land.longdescription + " ";
     document.querySelector("h1").textContent = land.destination + " ";
-    document.querySelector("h5").textContent = land.shortdescription + " ";
+    document.querySelector("p").textContent = land.shortdescription + " ";
     document.querySelector("h3").textContent = land.City + " ";
     document.querySelector(".quote").src = medieurl + land.quote;
+    document.querySelector(".quotebillede").src = medieurl + land.quotebillede;
     document.querySelector("button").addEventListener("click", tilbageTilMenu);
 
 }
@@ -39,4 +40,26 @@ function visLande(land) {
 function tilbageTilMenu() {
     console.log("tilbageTilMenu");
     history.back();
+}
+
+//burger
+
+window.addEventListener("load", sidenVises);
+
+function sidenVises() {
+    console.log("sidenVises");
+    document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+
+}
+
+function toggleMenu() {
+    console.log("toggleMenu");
+    document.querySelector("#menu1").classList.toggle("hidden");
+    myFunctionBurger(this);
+
+}
+
+function myFunctionBurger(x) {
+    console.log("myFunctionBurger");
+    x.classList.toggle("change");
 }
