@@ -124,7 +124,15 @@ button:hover {
         margin: 50px;
     }
 
+    #form_holder {
+        margin-top: 100px;
+        margin-bottom: 800px;
 
+    }
+
+    #info {
+        margin-top: 100px;
+    }
 
     form,
     #thank {

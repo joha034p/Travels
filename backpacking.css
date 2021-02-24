@@ -120,12 +120,11 @@
             margin: auto;
         }
 
-        .icon_none {
-            width: 40px;
-            height: 54px;
-            opacity: 0;
+        .icon_all {
+            background-image: url(billeder/icon/allicon.svg);
         }
 
+        .icon_all,
         .icon_australia,
         .icon_india,
         .icon_newzealand,
