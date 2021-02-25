@@ -19,7 +19,7 @@ header img {
 }
 
 .search {
-    background-image: url(Billeder/icon/search_icon.png);
+    background-image: url(billeder/icon/search_icon.png);
     background-size: cover;
     width: 35px;
     height: 35px;
@@ -28,7 +28,7 @@ header img {
 }
 
 .searchBurger {
-    background-image: url(Billeder/icon/search_icon.png);
+    background-image: url(billeder/icon/search_icon.png);
     background-size: cover;
     width: 35px;
     height: 35px;
