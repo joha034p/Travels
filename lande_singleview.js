@@ -10,7 +10,19 @@ let lande;
 
 
 console.log("ID", id);
-document.addEventListener("DOMContentLoaded", loadJSON);
+document.addEventListener("DOMContentLoaded", start);
+
+function start() {
+    const menuKnapper = document.querySelectorAll("nav a");
+    menuKnapper.forEach(knap => knap.addEventListener("click", valgtKnap));
+    loadJSON();
+}
+
+//nav .menu vis hvor på sitet man er.
+function valgtKnap() {
+    document.querySelector(".valgtMenu").classList.remove("valgtMenu");
+    this.classList.add("valgtMenu");
+}
 
 async function loadJSON() {
     console.log("loadJSON");

@@ -12,6 +12,11 @@ main {
     max-width: 1200px;
 }
 
+.valgtMenu {
+    background-color: black;
+    color: white;
+}
+
 .search {
     background-image: url(Billeder/icon/search_icon.png);
     background-size: cover;

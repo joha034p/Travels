@@ -41,11 +41,15 @@ a {
     text-decoration: none;
 }
 
-.du_er_her {
-
+/*en class der ændrer udseendet på den valgte knap*/
+.valgt {
     background-color: black;
     color: white;
+}
 
+.valgtMenu {
+    background-color: black;
+    color: white;
 }
 
 button {
@@ -112,10 +116,7 @@ button:hover {
         position: absolute;
         z-index: 100;
         text-align: center;
-        padding-left: 5vw;
-
         position: fixed;
-
     }
 
     nav a {

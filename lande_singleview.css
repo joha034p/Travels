@@ -13,6 +13,11 @@ header img {
     margin-bottom: -10vw;
 }
 
+.valgtMenu {
+    background-color: black;
+    color: white;
+}
+
 .search {
     background-image: url(Billeder/icon/search_icon.png);
     background-size: cover;

@@ -28,6 +28,14 @@ function start() {
     const filterKnapper = document.querySelectorAll("nav button");
     filterKnapper.forEach(knap => knap.addEventListener("click", filtrerLande));
     hentData();
+    const menuKnapper = document.querySelectorAll("nav a");
+    menuKnapper.forEach(knap => knap.addEventListener("click", valgtKnap));
+}
+
+//nav .menu vis hvor på sitet man er.
+function valgtKnap() {
+    document.querySelector(".valgtMenu").classList.remove("valgtMenu");
+    this.classList.add("valgtMenu");
 }
 
 function filtrerLande() {

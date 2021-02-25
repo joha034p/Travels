@@ -3,7 +3,14 @@ window.addEventListener("load", sidenVises);
 function sidenVises() {
     console.log("sidenVises");
     document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+    const menuKnapper = document.querySelectorAll("nav a");
+    menuKnapper.forEach(knap => knap.addEventListener("click", valgtKnap));
+}
 
+//nav .menu vis hvor på sitet man er.
+function valgtKnap() {
+    document.querySelector(".valgtMenu").classList.remove("valgtMenu");
+    this.classList.add("valgtMenu");
 }
 
 function toggleMenu() {
@@ -16,12 +23,6 @@ function toggleMenu() {
 function myFunctionBurger(x) {
     console.log("myFunctionBurger");
     x.classList.toggle("change");
-}
-
-//nav du_er_her
-function scrollChange() {
-    console.log("scroll");
-    document.querySelector("#travel").classList.add("du_er_her");
 }
 
 //respons på kontakt siden efter man har sendt en besked

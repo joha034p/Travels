@@ -44,6 +44,14 @@ function start() {
     filterKnapper.forEach(knap => knap.addEventListener("click", filtrerLande));
     //når denne function er i gang, skal den også kalde "hentData" funktionen.
     hentData();
+    const menuKnapper = document.querySelectorAll("nav a");
+    menuKnapper.forEach(knap => knap.addEventListener("click", valgtKnap));
+}
+
+//nav .menu vis hvor på sitet man er.
+function valgtKnap() {
+    document.querySelector(".valgtMenu").classList.remove("valgtMenu");
+    this.classList.add("valgtMenu");
 }
 
 function filtrerLande() {

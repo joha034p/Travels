@@ -249,6 +249,11 @@
             opacity: 100%;
         }
 
+        .valgtMenu {
+            background-color: black;
+            color: white;
+        }
+
         .quote h4 {
             font-family: 'Kumar One Outline', cursive;
             text-align: center;
