@@ -88,6 +88,7 @@ a {
         width: auto;
         height: 43vw;
         object-fit: cover;
+        opacity: 90%;
     }
 
     /* video på forside*/
@@ -111,6 +112,7 @@ a {
         top: -33vw;
         font-family: 'Kumar One Outline', cursive;
         font-size: 4rem;
+        font-weight: 600;
     }
 
     h3 {
@@ -118,9 +120,10 @@ a {
         position: relative;
         top: -10vw;
         color: #000000;
-        font-family: 'Kumar One Outline', cursive;
+        font-family: 'Kumar One', cursive;
         font-size: 2rem;
         text-decoration: none;
+        font-weight: 100;
     }
 
     h3:hover {
@@ -150,6 +153,34 @@ a {
         grid-gap: 3vw;
         position: relative;
         top: -10vw;
+    }
+
+    /* img hover */
+
+    .box1 .box2 .box3 .box4 .box5 .box6 {
+        overflow: hidden;
+    }
+
+    .box1 .box2 .box3 .box4 .box5 .box6 {
+        padding: 30px;
+        margin: auto;
+    }
+
+    main .img {
+        cursor: pointer;
+        /*alle ændringer på dette element gøres over 0.6 sek.*/
+        transition: .6s;
+        /*gør billedet mørkere*/
+        filter: brightness(75%);
+    }
+
+
+    /*få billederne til at blive større og lyse ved hover*/
+    main img:hover {
+        /*gør billedet større (1 er original str.)*/
+        transform: scale(1.1);
+        /*giv billedet 100% lysstyrke*/
+        filter: brightness(100%);
     }
 
     /* footer på laptop */
