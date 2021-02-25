@@ -40,6 +40,13 @@ a {
     text-decoration: none;
 }
 
+.du_er_her {
+
+    background-color: black;
+    color: white;
+
+}
+
 /* laptop */
 
 @media only screen and (min-width: 768px) {
@@ -66,6 +73,12 @@ a {
         position: absolute;
         z-index: 100;
         text-align: center;
+<<<<<<< HEAD
+=======
+        padding-left: 5vw;
+
+        position: fixed;
+>>>>>>> origin/master
     }
 
     nav a {
