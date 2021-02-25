@@ -20,6 +20,31 @@ header img {
     font-size: 3rem;
 }
 
+button {
+    place-self: center;
+    margin-bottom: 50px;
+    width: 120px;
+    height: 50px;
+}
+
+
+.button_holder {
+    display: grid;
+    grid-gap: 5px;
+    padding-top: 40px;
+    margin-top: 25vw;
+    margin-bottom: 10vw;
+}
+
+.icon_back {
+    background-image: url(billeder/icon/backicon.svg);
+    background-size: cover;
+    width: 40px;
+    height: 54px;
+    place-self: center;
+    filter: invert(43%) sepia(17%) saturate(1512%) hue-rotate(159deg) brightness(94%) contrast(92%);
+}
+
 
 /*Desktop*/
 @media only screen and (min-width: 768px) {
@@ -75,8 +100,8 @@ header img {
         cursor: pointer;
         font-size: 16px;
         transition: .3s;
-        margin-left: 10vw;
-        margin-top: 20vw;
+
+
     }
 
     button:hover {
@@ -84,6 +109,34 @@ header img {
         color: white;
         opacity: 100%;
     }
+
+    button {
+        place-self: center;
+
+        margin-bottom: 50px;
+        width: 120px;
+        height: 50px;
+    }
+
+
+    .button_holder {
+        display: grid;
+        grid-gap: 5px;
+        padding-top: 40px;
+        height: 40px;
+        margin-top: 25vw;
+        margin-bottom: 10vw;
+    }
+
+    .icon_back {
+        background-image: url(billeder/icon/backicon.svg);
+        background-size: cover;
+        width: 40px;
+        height: 54px;
+        place-self: center;
+        filter: invert(43%) sepia(17%) saturate(1512%) hue-rotate(159deg) brightness(94%) contrast(92%);
+    }
+
 
 
 
@@ -257,7 +310,7 @@ header img {
         position: relative;
         top: -1vw;
         z-index: -1;
-/*
+        /*
         min-width: auto;
         width: auto;
 */
@@ -302,6 +355,10 @@ header img {
     }
 
 
+    button {
+        /*        margin-top: 20vw;
+        margin-bottom: 50px;*/
+    }
 
     /*BURGERMENU*/
     .menu {
