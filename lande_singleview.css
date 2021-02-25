@@ -199,6 +199,7 @@ button a:hover {
         position: absolute;
         z-index: 100;
         text-align: center;
+        position: fixed;
     }
 
     nav a {
