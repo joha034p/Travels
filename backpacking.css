@@ -138,6 +138,30 @@
             margin: auto;
         }
 
+        footer button {
+            background-color: black;
+        }
+
+        footer .quote button {
+            margin: 0 auto;
+            margin-bottom: 5vw;
+        }
+
+        footer a {
+            font-family: 'Arvo', serif;
+            color: white;
+            text-decoration: none
+        }
+
+        footer button:hover {
+            background-color: #eef1f2;
+            color: black;
+        }
+
+        button a:hover {
+            color: black;
+        }
+
         .icon_all {
             background-image: url(billeder/icon/allicon.svg);
         }
@@ -323,6 +347,7 @@
                 z-index: 100;
                 /*teksten i menuen på toppen af sitet centreres*/
                 text-align: center;
+                position: fixed;
             }
 
             nav a {

@@ -54,6 +54,24 @@ button {
     margin-bottom: 10vw;
 }
 
+footer button {
+    background-color: black;
+    color: white;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+footer button:hover {
+    background-color: white;
+}
+
+button a:hover {
+    color: black;
+}
+
 .icon_back {
     background-image: url(billeder/icon/backicon.svg);
     background-size: cover;
