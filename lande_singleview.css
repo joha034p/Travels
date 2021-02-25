@@ -13,6 +13,24 @@ header img {
     margin-bottom: -10vw;
 }
 
+.search {
+    background-image: url(Billeder/icon/search_icon.png);
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    left: 55px;
+}
+
+.searchBurger {
+    background-image: url(Billeder/icon/search_icon.png);
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    margin: auto;
+    bottom: 35px;
+}
 
 .quote h4 {
     font-family: 'Kumar One Outline', cursive;
@@ -155,12 +173,15 @@ button {
     }
 
     nav .menu {
-        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: #eef1f2;
         width: 100vw;
         position: absolute;
         z-index: 100;
         text-align: center;
+        padding-left: 5vw;
     }
 
     nav a {
