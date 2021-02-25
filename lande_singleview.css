@@ -20,6 +20,12 @@ header img {
     font-size: 3rem;
 }
 
+button {
+    margin-left: 47vw;
+    margin-top: 20vw;
+    margin-bottom: 50px;
+}
+
 
 /*Desktop*/
 @media only screen and (min-width: 768px) {
@@ -75,8 +81,8 @@ header img {
         cursor: pointer;
         font-size: 16px;
         transition: .3s;
-        margin-left: 10vw;
-        margin-top: 20vw;
+
+
     }
 
     button:hover {
@@ -257,7 +263,7 @@ header img {
         position: relative;
         top: -1vw;
         z-index: -1;
-/*
+        /*
         min-width: auto;
         width: auto;
 */
@@ -301,7 +307,11 @@ header img {
         opacity: 100%;
     }
 
-
+    button {
+        margin-left: 35vw;
+        margin-top: 20vw;
+        margin-bottom: 50px;
+    }
 
     /*BURGERMENU*/
     .menu {
