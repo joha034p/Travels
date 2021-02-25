@@ -88,6 +88,10 @@
             padding-top: 15vw;
         }
 
+        h2 {
+            font-family: 'Kumar One', cursive;
+        }
+
         h3 {
             font-family: 'Arvo', serif;
         }
@@ -401,7 +405,7 @@
             h2 {
                 padding-top: 15vw;
                 padding-bottom: 4vw;
-                font-family: 'Kumar One Outline', cursive;
+                font-family: 'Kumar One', cursive;
                 font-size: 2rem;
             }
 
@@ -567,7 +571,7 @@
 
             h2 {
                 padding-top: 15vw;
-                font-family: 'Kumar One Outline', cursive;
+                font-family: 'Kumar One', cursive;
                 font-size: 8vw;
             }
 

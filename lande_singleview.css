@@ -257,7 +257,7 @@ button a:hover {
     h3 {
         text-align: center;
         position: relative;
-        font-family: 'Kumar One Outline', cursive;
+        font-family: 'Kumar One', cursive;
         font-size: 2rem;
     }
 
@@ -498,9 +498,9 @@ button a:hover {
     h3 {
         text-align: left;
         position: relative;
-        font-family: 'Kumar One Outline',
-            cursive;
+        font-family: 'Kumar One', cursive;
         font-size: 2rem;
+        font-weight: 100;
     }
 
     h5 {
