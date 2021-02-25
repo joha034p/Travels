@@ -18,6 +18,12 @@ function myFunctionBurger(x) {
     x.classList.toggle("change");
 }
 
+//nav du_er_her
+function scrollChange() {
+    console.log("scroll");
+    document.querySelector("#travel").classList.add("du_er_her");
+}
+
 //respons på kontakt siden efter man har sendt en besked
 function openThank() {
     console.log("open thank");
