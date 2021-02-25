@@ -166,7 +166,7 @@ a {
         margin: auto;
     }
 
-    .img {
+    main .img {
         cursor: pointer;
         /*alle ændringer på dette element gøres over 0.6 sek.*/
         transition: .6s;
@@ -176,7 +176,7 @@ a {
 
 
     /*få billederne til at blive større og lyse ved hover*/
-    img:hover {
+    main img:hover {
         /*gør billedet større (1 er original str.)*/
         transform: scale(1.1);
         /*giv billedet 100% lysstyrke*/
