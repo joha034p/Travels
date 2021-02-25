@@ -206,11 +206,7 @@ button:hover {
         position: absolute;
         z-index: 100;
         text-align: center;
-
         position: fixed;
-
-        padding-left: 5vw;
-
     }
 
     nav a {
