@@ -21,9 +21,28 @@ header img {
 }
 
 button {
-    margin-left: 47vw;
-    margin-top: 20vw;
+    place-self: center;
     margin-bottom: 50px;
+    width: 120px;
+    height: 50px;
+}
+
+
+.button_holder {
+    display: grid;
+    grid-gap: 5px;
+    padding-top: 40px;
+    margin-top: 25vw;
+    margin-bottom: 10vw;
+}
+
+.icon_back {
+    background-image: url(billeder/icon/backicon.svg);
+    background-size: cover;
+    width: 40px;
+    height: 54px;
+    place-self: center;
+    filter: invert(43%) sepia(17%) saturate(1512%) hue-rotate(159deg) brightness(94%) contrast(92%);
 }
 
 
@@ -90,6 +109,34 @@ button {
         color: white;
         opacity: 100%;
     }
+
+    button {
+        place-self: center;
+
+        margin-bottom: 50px;
+        width: 120px;
+        height: 50px;
+    }
+
+
+    .button_holder {
+        display: grid;
+        grid-gap: 5px;
+        padding-top: 40px;
+        height: 40px;
+        margin-top: 25vw;
+        margin-bottom: 10vw;
+    }
+
+    .icon_back {
+        background-image: url(billeder/icon/backicon.svg);
+        background-size: cover;
+        width: 40px;
+        height: 54px;
+        place-self: center;
+        filter: invert(43%) sepia(17%) saturate(1512%) hue-rotate(159deg) brightness(94%) contrast(92%);
+    }
+
 
 
 
@@ -307,10 +354,10 @@ button {
         opacity: 100%;
     }
 
+
     button {
-        margin-left: 35vw;
-        margin-top: 20vw;
-        margin-bottom: 50px;
+        /*        margin-top: 20vw;
+        margin-bottom: 50px;*/
     }
 
     /*BURGERMENU*/
