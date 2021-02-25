@@ -34,6 +34,7 @@ img {
 
 main img {
     opacity: 0.5;
+    transition: .3s;
 }
 
 a {
@@ -73,12 +74,10 @@ a {
         position: absolute;
         z-index: 100;
         text-align: center;
-<<<<<<< HEAD
-=======
-        padding-left: 5vw;
+        <<<<<<< HEAD=======padding-left: 5vw;
 
         position: fixed;
->>>>>>> origin/master
+        > > > > > > > origin/master
     }
 
     nav a {
