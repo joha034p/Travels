@@ -48,6 +48,44 @@ a {
 
 }
 
+button {
+    display: block;
+    margin: 10px;
+    font-family: 'Arvo', serif;
+    /*Font in button goes here*/
+    background-color: black;
+    color: #eef1f2;
+    cursor: pointer;
+    width: 80px;
+    height: 40px;
+
+    place-self: center;
+}
+
+button:hover {
+    background-color: #eef1f2;
+    color: black;
+}
+
+button a:hover {
+    color: black;
+}
+
+footer .quote button {
+    margin: 0 auto;
+    margin-bottom: 5vw;
+}
+
+footer a {
+    font-family: 'Arvo', serif;
+    color: white;
+    text-decoration: none
+}
+
+button:hover {
+    color: black;
+}
+
 /* laptop */
 
 @media only screen and (min-width: 768px) {
