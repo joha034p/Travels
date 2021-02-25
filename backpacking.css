@@ -23,7 +23,25 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
+        }
 
+        .search {
+            background-image: url(Billeder/icon/search_icon.png);
+            background-size: cover;
+            width: 35px;
+            height: 35px;
+            position: relative;
+            left: 55px;
+        }
+
+        .searchBurger {
+            background-image: url(Billeder/icon/search_icon.png);
+            background-size: cover;
+            width: 35px;
+            height: 35px;
+            position: relative;
+            margin: auto;
+            bottom: 35px;
         }
 
         video {
@@ -294,7 +312,9 @@
             }
 
             nav .menu {
-                display: inline-block;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 background-color: #eef1f2;
                 width: 100vw;
                 /*elementet lægger sig oven på et andet*/
@@ -303,6 +323,7 @@
                 z-index: 100;
                 /*teksten i menuen på toppen af sitet centreres*/
                 text-align: center;
+                padding-left: 5vw;
             }
 
             nav a {
@@ -355,6 +376,7 @@
 
             h2 {
                 padding-top: 15vw;
+                padding-bottom: 4vw;
                 font-family: 'Kumar One Outline', cursive;
                 font-size: 2rem;
             }
@@ -409,7 +431,6 @@
             .menu {
                 display: none;
                 z-index: 2;
-
             }
 
             nav .section_wrapper {
@@ -439,6 +460,7 @@
             #menu1 {
                 position: absolute;
                 padding-top: 13vh;
+                padding-bottom: 5vh;
                 padding-left: 34vw;
                 padding-right: 33.5vw;
                 text-align: center;
